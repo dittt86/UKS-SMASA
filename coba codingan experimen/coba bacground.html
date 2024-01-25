@@ -1,0 +1,34 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Animasi Warna</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #3498db; /* Warna biru */
+            transition: background-color 1s ease; /* Animasi perubahan warna selama 1 detik */
+        }
+
+        /* Tambahkan kelas baru pada body untuk merubah warna latar belakang */
+        body.changeColor {
+            background-color: #e74c3c; /* Warna merah */
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        // JavaScript untuk menambahkan dan menghapus kelas pada body
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(function() {
+                document.body.classList.toggle('changeColor');
+            }, 2000); // Ganti warna setiap 2 detik
+        });
+    </script>
+    
+</body>
